@@ -8,3 +8,6 @@ local node22 = vim.fn.expand("~/.asdf/installs/nodejs/22.18.0/bin")
 if vim.fn.isdirectory(node22) == 1 then
   vim.env.PATH = node22 .. ":" .. vim.env.PATH
 end
+
+-- Only format with Prettier when the project has a Prettier config (formatting.prettier extra).
+vim.g.lazyvim_prettier_needs_config = true
