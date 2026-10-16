@@ -116,6 +116,10 @@ return {
         -- in Docker that path is a named volume, so run `npm install` in web/ on the host once.
         vtsls = {},
         tailwindcss = {},
+
+        -- oxlint: only starts in projects with an oxlint config, using the project's own binary
+        -- from node_modules/.bin (so the same npm install on the host is needed).
+        oxlint = { mason = false },
       },
     },
   },
