@@ -1,0 +1,5 @@
+# Standalone bundle for running ruby-lsp on the host, independent of each
+# project's Gemfile (whose gems usually only exist inside Docker).
+source "https://rubygems.org"
+
+gem "ruby-lsp", require: false
