@@ -6,3 +6,6 @@ debug
 foo.*
 *.log
 data
+
+# Machine-specific settings (see lua/plugins/ai.lua)
+/local.lua
